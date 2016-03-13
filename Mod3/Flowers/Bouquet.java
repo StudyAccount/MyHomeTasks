@@ -40,7 +40,4 @@ public class Bouquet {
 
     }
 
-    public void descriptionOfBouquet(){
-
-    }
 }

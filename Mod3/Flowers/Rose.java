@@ -7,12 +7,12 @@ import javax.sound.midi.Soundbank;
  */
 public class Rose extends Flower {
 
-    public Rose(){
-    }
-
     public Rose(String name, String colour, float flowerPrice){
         super("Rose",colour,flowerPrice);
     }
 
-
+    @Override
+    public void smell() {
+        System.out.println("Your roses smells very sweetly");
+    }
 }

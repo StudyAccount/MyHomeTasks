@@ -3,15 +3,11 @@ package com.goit.gojavaonline;
 /**
  * Created by User on 06.03.2016.
  */
-public class Flower {
+public abstract class Flower {
 
     protected String name;
     protected String colour;
     protected float flowerPrice;
-
-    public Flower(){
-
-    }
 
     public Flower(String name, String colour, float flowerPrice){
         this.colour = colour;
@@ -49,4 +45,11 @@ public class Flower {
         System.out.println("Your flower is " + colour + " coloured");
         System.out.println("It costs " + flowerPrice + "UAH");
     }
+
+    public void grouse(){
+        System.out.println("Your flower grouse jn a mr's Mc'Donalds farm ");
+    }
+
+    public abstract void smell();
+
 }

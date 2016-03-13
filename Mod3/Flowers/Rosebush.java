@@ -1,18 +1,18 @@
 package com.goit.gojavaonline;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by User on 07.03.2016.
  */
 public class Rosebush {
-    private List<Rose> roses;
+    private ArrayList<Rose> roses;
 
-    public List<Rose> getRoses() {
+    public ArrayList<Rose> getRoses() {
         return roses;
     }
 
-    public void setRoses(List<Rose> roses) {
+    public void setRoses(ArrayList<Rose> roses) {
         this.roses = roses;
     }
 }
