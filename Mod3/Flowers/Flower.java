@@ -7,9 +7,9 @@ public abstract class Flower {
 
     protected String name;
     protected String colour;
-    protected float flowerPrice;
+    protected int flowerPrice;
 
-    public Flower(String name, String colour, float flowerPrice){
+    public Flower(String name, String colour, int flowerPrice){
         this.colour = colour;
         this.name = name;
         this.flowerPrice = flowerPrice;
@@ -19,7 +19,7 @@ public abstract class Flower {
         this.colour = colour;
     }
 
-    public void setFlowerPrice(float flowerPrice) {
+    public void setFlowerPrice(int flowerPrice) {
         this.flowerPrice = flowerPrice;
     }
 
@@ -35,19 +35,19 @@ public abstract class Flower {
         return name;
     }
 
-    public float getFlowerPrice() {
+    public int getFlowerPrice() {
         return flowerPrice;
     }
 
     public void description(){
 
-        System.out.println("Your flower calls "+ name);
+        System.out.println("Your flower calls " + name);
         System.out.println("Your flower is " + colour + " coloured");
-        System.out.println("It costs " + flowerPrice + "UAH");
+        System.out.println("It costs " + flowerPrice/100 + " UAH");
     }
 
     public void grouse(){
-        System.out.println("Your flower grouse jn a mr's Mc'Donalds farm ");
+        System.out.println("Your flower grouse in a mr's Mc'Donalds farm ");
     }
 
     public abstract void smell();

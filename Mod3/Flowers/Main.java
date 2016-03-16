@@ -6,15 +6,12 @@ package com.goit.gojavaonline;
 public class Main {
 
     public static void main(String[] args) {
-        Flower flower = new Tulip("Rose","red",12.50f);
-        Flower flower2 = new Tulip("Rose","yellow",12.50f);
-        Flower flower3 = new Rose("Tulip","white",12.50f);
-        Flower flower4 = new Aster("Tulip","red",2.50f);
+        Flower flower = new Tulip("Rose", "red", 1250);
+        Flower flower2 = new Tulip("Rose", "yellow", 1250);
+        Flower flower3 = new Rose("Tulip", "white", 1250);
+        Flower flower4 = new Aster("Tulip", "red", 250);
 
-
-
-
-       Bouquet bouquet = new Bouquet();
+        Bouquet bouquet = new Bouquet();
         bouquet.addFlower(flower);
         bouquet.addFlower(flower2);
         bouquet.addFlower(flower3);

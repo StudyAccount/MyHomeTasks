@@ -7,8 +7,8 @@ import javax.sound.midi.Soundbank;
  */
 public class Rose extends Flower {
 
-    public Rose(String name, String colour, float flowerPrice){
-        super("Rose",colour,flowerPrice);
+    public Rose(String name, String colour, int flowerPrice){
+        super("Rose", colour, flowerPrice);
     }
 
     @Override

@@ -5,8 +5,8 @@ package com.goit.gojavaonline;
  */
 public class Tulip extends Flower {
 
-    public Tulip(String name, String colour, float flowerPrice) {
-        super("Tulip",colour,flowerPrice);
+    public Tulip(String name, String colour, int flowerPrice) {
+        super("Tulip", colour, flowerPrice);
     }
 
     @Override

@@ -5,8 +5,8 @@ package com.goit.gojavaonline;
  */
 public class Chamomline extends Flower {
 
-    public Chamomline(String name, String colour, float flowerPrice) {
-        super("Chamomline",colour,flowerPrice);
+    public Chamomline(String name, String colour, int flowerPrice) {
+        super("Chamomline", colour, flowerPrice);
     }
 
     @Override
