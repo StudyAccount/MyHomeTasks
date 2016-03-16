@@ -8,9 +8,7 @@ import java.util.List;
  */
 public class Bouquet {
 
-    protected List<Flower> flowers = new ArrayList<Flower>() {
-
-    };
+    protected List<Flower> flowers = new ArrayList<Flower>();
 
     protected int bouquetPrice;
 
