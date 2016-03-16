@@ -7,10 +7,6 @@ public class TextFile extends File {
 
     protected long symbolCount;
 
-    public TextFile(){
-
-    }
-
     public TextFile ( String location, String name, String extension, float size, long symbolCount){
         super(location,name,extension,size);
         this.symbolCount = symbolCount;
@@ -26,6 +22,7 @@ public class TextFile extends File {
         return symbolCount;
     }
 
+    @Override
     public void description(){
         super.description();
         System.out.println("Have " + this.symbolCount + " symbols");

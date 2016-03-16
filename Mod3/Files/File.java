@@ -3,16 +3,12 @@ package com.goit.gojavaonline;
 /**
  * Created by User on 06.03.2016.
  */
-public class File {
+abstract public class File {
 
     protected String extension;
     protected float size;
     protected String name;
     protected String location;
-
-    public File(){
-
-    }
 
     public File ( String location, String name, String extension, float size){
         this.location = location;

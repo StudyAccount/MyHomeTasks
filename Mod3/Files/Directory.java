@@ -7,10 +7,10 @@ import java.util.*;
  */
 public class Directory {
 
-    private ArrayList<File> files = new ArrayList<File>() {
+    protected List<File> files = new ArrayList<File>() {
 
     };
-    private String directoryName;
+    protected String directoryName;
 
     public String getDirectoryName() {
         return directoryName;
@@ -37,12 +37,11 @@ public class Directory {
 
     public void listDir(){
         System.out.println("Current directory is " + this.directoryName);
-        System.out.println("File list:");
+        System.out.println("File list: ");
 
-        if (files != null){
-            for (int counter = 0; counter <files.size(); counter++){
-                File file = files.get(counter);
-                System.out.println("- " + file.name + file.extension + "  " +file.size );
+        if (!files.isEmpty()){
+            for (File fileInDirectory : files) {
+                System.out.println("- " + fileInDirectory.name + fileInDirectory.extension + "  " + fileInDirectory.size);
             }
         }
     }
